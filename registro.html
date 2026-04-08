@@ -19,9 +19,9 @@
                     <li ><a href="peliculas.html"  class="item-menu " >PELICULAS</a></li>
                     <li ><a href="series.html"  class="item-menu" >SERIES</a></li>
                     <li ><a href="./index.html#tendencia"  class="item-menu">LO MÁS VISTO</a></li>
-                    <li ><a href="registro.html"  class="item-menu active" target="_blank">DATE DE ALTA</a></li>
-                    <li ><a href="contacto.html"  class="item-menu" target="_blank">CONTACTO</a></li>
-                    <li ><a href="login.html"  class="item-menu" target="_blank"><img src="assets/img/user-regular.svg" height="20px" alt="icono login"></a></li>
+                    <li ><a href="registro.html"  class="item-menu active" >DATE DE ALTA</a></li>
+                    <li ><a href="contacto.html"  class="item-menu" >CONTACTO</a></li>
+                    <li ><a href="login.html"  class="item-menu" ><img src="assets/img/user-regular.svg" height="20px" alt="icono login"></a></li>
                 </ul>
             </a>
         </nav>
@@ -32,21 +32,40 @@
         </div>
     </section>
     <main>
-        <section>DATE DE ALTA</section>
+        <section>
+            <div class="forms-container">
+                <div class="form-box">
+                    <h2>DATE DE ALTA</h2>
+                    <form id="registerForm" action="#" method="get">
+                        <label for="reg-name">Nombre</label>
+                        <input id="reg-name" type="text" name="name" placeholder="Tu nombre" required>
+
+                        <label for="reg-email">Correo</label>
+                        <input id="reg-email" type="email" name="email" placeholder="tu@ejemplo.com" required>
+
+                        <label for="reg-pass">Contraseña</label>
+                        <input id="reg-pass" type="password" name="password" placeholder="Contraseña" required>
+
+                        <label class="policy"><input id="reg-accept" type="checkbox" name="accept" required> Acepto la <a href="politica-privacidad.html">Política de privacidad</a> y la <a href="politica-cookies.html">Política de cookies</a></label>
+
+                        <button type="submit">Registrar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
     
     <footer>
-        <img src="assets/img/gato.png" height="80px">
-        <img src="assets/img/logo.png" height="80px">
+        <a href="https://www.linkedin.com/in/daniel-molina-alvarez/" target="_blank"><img src="assets/img/gato.png" height="80px"></a>
+        <a href="./" target="_self"><img src="assets/img/logo.png" height="80px"></a>
         <ul>
-            <li><a href="#" class="compliance" target="_top">Politica de privacidad</a></li>
-            <li><a href="#" class="compliance" target="_top">Politica de cookies</a></li>
-            <li><a href="#" class="compliance" target="_top">Ayuda</a></li>
-            <li><a href="#" class="compliance" target="_top">¿Quienes somos?</a></li>
+            <li><a href="politica-privacidad.html" class="compliance " target="_top">Politica de privacidad</a></li>
+            <li><a href="politica-cookies.html" class="compliance " target="_top">Politica de cookies</a></li>
+            <li><a href="ayuda.html" class="compliance" target="_top">Ayuda</a></li>
+            <li><a href="https://www.linkedin.com/in/daniel-molina-alvarez/" class="compliance " target="_blank">¿Quienes somos?</a></li>
         </ul>
         <p>&copy; Todos los derechos publicos</p>
     </footer>
-</footer>
 <script src="assets/js/scripts.js"></script>
 
 </body>
