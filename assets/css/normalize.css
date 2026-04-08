@@ -1,0 +1,5 @@
+/* normalize.css wrapper: importa la versión oficial desde CDN */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+/* Puedes reemplazar este archivo por la copia completa de normalize.css
+   si prefieres servirlo localmente sin depender de la CDN. */

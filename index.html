@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F5FLIX | Práctica de HTML y CSS </title>
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <style>
+        :root{
+            --naranja:#F68048;
+            --azul-oscuro:#0D1A63;
+            --azul:#1A2CA3;
+            --azul-claro:#2845D6;
+            --blanco:whitesmoke;
+            --negro:#060606;
+        }
+        .naranja{color:var(--naranja)}
+        .azul-oscuro{color:var(--azul-oscuro)}
+        .azul{color:var(--azul)}
+        .azul-claro{color:var(--azul-claro)}
+        .blanco{color:var(--blanco)}
+        .negro{color:var(--negro)}
+
+        body{
+            background-color: var(--azul-claro);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            color: var(--negro);
+            background-color: var(--blanco);
+        }
+        /**header*/
+        header{
+            background-color: var(--azul-oscuro);
+        }
+        nav{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .logo{
+
+        }
+        .logo:hover{
+            transform: scale(1.1);
+            transition: transform 500ms ease, box-shadow 300ms ease;
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 40px;
+        }
+        .item-menu{
+            box-sizing: border-box;
+            border: 2px solid transparent;
+            padding: 5px 8px 5px 8px;
+            color: var(--blanco);
+            text-decoration: none;
+            
+        }
+        .item-menu:hover{
+            border-radius: 5px;
+            background-color: var(--naranja);
+            transition: transform 500ms ease, box-shadow 300ms ease;
+        }
+        li{
+            list-style: none;
+        }
+        .user-icon{
+            fill: aquamarine;
+        }
+        /**
+        * contenido
+        */
+        .hero{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            height: 70vh;
+            background-image: url(/assets/img/top-view-3d-glasses-movies-tickets.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .lateral{
+            width: 450px;
+        }
+        .hero-logo:hover{
+            transform: scale(1.2);
+            transition: transform 500ms ease, box-shadow 300ms ease;
+        }
+        footer{
+            background-color: var(--azul-oscuro);
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="http://" target="_self">
+                <img class="logo" src="/assets/img/logo.png" height="80px">
+                <ul>
+                    <li ><a href="#"  class="item-menu" target="_blank" rel="noopener noreferrer">PELICULAS</a></li>
+                    <li ><a href="#"  class="item-menu" target="_blank" rel="noopener noreferrer">SERIES</a></li>
+                    <li ><a href="#"  class="item-menu" target="_blank" rel="noopener noreferrer">LO MÁS VISTO</a></li>
+                    <li ><a href="#"  class="item-menu" target="_blank" rel="noopener noreferrer">DATE DE ALTA</a></li>
+                    <li ><a href="#"  class="item-menu" target="_blank" rel="noopener noreferrer">CONTACTO</a></li>
+                    <li ><a href="#"  class="item-menu" target="_blank" rel="noopener noreferrer"><img src="/assets/img/user-regular.svg" height="20px" alt="icono login"></a></li>
+                </ul>
+            </a>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="lateral">
+            <h1>LOREM IPSUM</h1>
+            <img class="hero-logo" src="/assets/img/logo.png">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+        </div>
+        
+    </section>
+    
+    <section>
+        <h2></h2>
+        <h4><span class="naranja">NARANJA</span></h4>
+        <h4><span class="azul-oscuro">azul-oscuro</span></h4>
+        <h4><span class="azul">AZUL</span></h4>
+        <h4><span class="azul-claro">Azul claro</span></h4>
+        <h4><span class="negro">NEgro</span></h4>
+        
+    </section>
+    <footer></footer>
+</body>
+</html>
