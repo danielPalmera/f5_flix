@@ -94,7 +94,7 @@
             align-items: center;
             gap: 40px;
         }
-        .item-menu{
+        .item-menu, .link-titulares{
             box-sizing: border-box;
             border: 2px solid transparent;
             padding: 5px 8px 5px 8px;
@@ -102,7 +102,7 @@
             text-decoration: none;
             
         }
-        .item-menu:hover{
+        .item-menu:hover, .link-titulares:hover{
             border-radius: 5px;
             background-color: var(--naranja);
             transition: transform 500ms ease, box-shadow 300ms ease;
@@ -216,7 +216,31 @@
         footer{
             background-color: var(--azul-oscuro);
             height: 80px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+            flex-direction: row;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: var(--blanco);
         }
+        footer ul li a{
+            color: var(--blanco);
+            font-size: .8em;
+            text-decoration: none;
+        }
+        footer ul li a:hover{
+            text-decoration: underline;
+        }
+        .titulares{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
     </style>
 </head>
 <body>
@@ -226,7 +250,7 @@
                 <img class="logo" src="/assets/img/logo.png" height="80px">
                 <ul>
                     <li ><a href="#peliculas"  class="item-menu" >PELICULAS</a></li>
-                    <li ><a href="#"  class="item-menu" >SERIES</a></li>
+                    <li ><a href="#series"  class="item-menu" >SERIES</a></li>
                     <li ><a href="#tendencia"  class="item-menu">LO MÁS VISTO</a></li>
                     <li ><a href="#"  class="item-menu" target="_blank" rel="noopener noreferrer">DATE DE ALTA</a></li>
                     <li ><a href="#"  class="item-menu" target="_blank" rel="noopener noreferrer">CONTACTO</a></li>
@@ -276,7 +300,7 @@
                     </figure>
                     <h3><a href="">LOREM IPSUM</a></h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <p class="genero"><span class="edad">+16</span> Documental - Drama</p>
+                    <p class="genero"><span class="edad">+16</span> Serie - Drama</p>
                 </article>
                 <article>
                     <figure>
@@ -297,24 +321,131 @@
             </div>
         </section>
         <section id="peliculas">
-            <h2>Peliculas</h2>
+            <div class="titulares">
+                <h2>Peliculas</h2>
+                <a href="#" class="link-titulares" target="_blank"> Ver Todo </a>
+            </div>
+            
+                <div class="galeria">
+                    <article>
+                        <figure>
+                            <img src="/assets/img/young-woman-standing-universe-texture-projection.jpg">
+                        </figure>
+                        <h3><a href="">LOREM IPSUM</a></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="genero"><span class="edad">+16</span> Comedia</p>
+                    </article>
+                    <article>
+                        <figure>
+                            <img src="/assets/img/beautiful-portrait-teenager-woman.jpg">
+                        </figure>
+                        <h3><a href="">LOREM IPSUM</a></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="genero"><span class="edad">+16</span> Terror</p>
+                    </article>
+                    <article>
+                        <figure>
+                            <img src="/assets/img/front-view-couple-with-plastic-foil.jpg">
+                        </figure>
+                        <h3><a href="">LOREM IPSUM</a></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="genero"><span class="edad">+16</span> Accion</p>
+                    </article>
+                    <article>
+                        <figure>
+                            <img src="/assets/img/close-up-portrait-side-view-halloween-woman-make-up.jpg">
+                        </figure>
+                        <h3><a href="">LOREM IPSUM</a></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="genero"><span class="edad">+16</span> Drama</p>
+                    </article>
+                    <article>
+                        <figure>
+                            <img src="/assets/img/woman-with-halloween-joker-half-face-makeup.jpg">
+                        </figure>
+                        <h3><a href="">LOREM IPSUM</a></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="genero"><span class="edad">+16</span> Belico</p>
+                    </article>
+                    <article>
+                        <figure>
+                            <img src="/assets/img/young-woman-standing-universe-texture-projection.jpg">
+                        </figure>
+                        <h3><a href="">LOREM IPSUM</a></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="genero"><span class="edad">+16</span> Comedia</p>
+                    </article>
+                </div>
         </section>
         <section id="series">
-            <h2>Series</h2>
+            <div class="titulares">
+                <h2>Series</h2>
+                <a href="#" class="link-titulares" target="_blank"> Ver Todo </a>
+            </div>
+                <div class="galeria">
+                    <article>
+                        <figure>
+                            <img src="/assets/img/young-woman-standing-universe-texture-projection.jpg">
+                        </figure>
+                        <h3><a href="">LOREM IPSUM</a></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="genero"><span class="edad">+16</span> Comedia</p>
+                    </article>
+                    <article>
+                        <figure>
+                            <img src="/assets/img/beautiful-portrait-teenager-woman.jpg">
+                        </figure>
+                        <h3><a href="">LOREM IPSUM</a></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="genero"><span class="edad">+16</span> Terror</p>
+                    </article>
+                    <article>
+                        <figure>
+                            <img src="/assets/img/front-view-couple-with-plastic-foil.jpg">
+                        </figure>
+                        <h3><a href="">LOREM IPSUM</a></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="genero"><span class="edad">+16</span> Accion</p>
+                    </article>
+                    <article>
+                        <figure>
+                            <img src="/assets/img/close-up-portrait-side-view-halloween-woman-make-up.jpg">
+                        </figure>
+                        <h3><a href="">LOREM IPSUM</a></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="genero"><span class="edad">+16</span> Drama</p>
+                    </article>
+                    <article>
+                        <figure>
+                            <img src="/assets/img/woman-with-halloween-joker-half-face-makeup.jpg">
+                        </figure>
+                        <h3><a href="">LOREM IPSUM</a></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="genero"><span class="edad">+16</span> Belico</p>
+                    </article>
+                    <article>
+                        <figure>
+                            <img src="/assets/img/young-woman-standing-universe-texture-projection.jpg">
+                        </figure>
+                        <h3><a href="">LOREM IPSUM</a></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="genero"><span class="edad">+16</span> Comedia</p>
+                    </article>
+                </div>
         </section>
         
     </main>
-    <!--
-    <section>
-        <h4><span class="naranja">NARANJA</span></h4>
-        <h4><span class="azul-oscuro">azul-oscuro</span></h4>
-        <h4><span class="azul">AZUL</span></h4>
-        <h4><span class="azul-claro">Azul claro</span></h4>
-        <h4><span class="negro">NEgro</span></h4>
-
-    </section>
-    -->
-    <footer></footer>
+    
+    <footer>
+        <img src="/assets/img/logo.png" height="80px">
+        <ul>
+            <li><a href="#" class="compliance" target="_top">Politica de privacidad</a></li>
+            <li><a href="#" class="compliance" target="_top">Politica de cookies</a></li>
+            <li><a href="#" class="compliance" target="_top">Ayuda</a></li>
+            <li><a href="#" class="compliance" target="_top">¿Quienes somos?</a></li>
+        </ul>
+        <p>&copy; Todos los derechos publicos</p>
+    </footer>
 </footer>
 
     <script>
@@ -341,4 +472,4 @@
     </script>
 
 </body>
-</html>
+</html> 
