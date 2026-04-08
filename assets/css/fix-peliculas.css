@@ -1,0 +1,44 @@
+
+.galeria{
+    display: flex;
+    gap: 20px;
+    align-items: start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+article{
+    width: 20%;
+    padding: 20px;
+    background-color:var(--azul);
+    border-radius: 20px;
+}
+
+article:hover{
+    border-color: red;
+}
+
+article img{
+    border-radius: 20px;
+    width: 100%;
+}
+article img{
+    filter: grayscale(100%);
+    transform: scale(.9);
+  transition: filter 0.3s ease; /* Para que el cambio sea suave */
+}
+
+article img:hover{
+    filter: grayscale(0%);
+    transform: scale(1);
+    transition: transform 300ms ease, box-shadow 300ms ease;
+}
+article:hover{
+    border-style:hidden;
+}
+
+article h3, p{
+    text-align: center;
+}
+

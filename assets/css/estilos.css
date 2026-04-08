@@ -116,11 +116,20 @@
             background-size: cover;
         }
         .hero-peliculas{
-            height: 50vh;
-            background-image: url(../img/3d-glasses-movies-tickets-top-view.jpg);
+            height: 40vh;
+            flex-direction: row;
+            background-image: url(../img/6f5c752c-0c66-43fb-9a25-5b1c78d8fd81.jpg);
         }
         .lateral{
             width: 450px;
+        }
+        .lateral-peliculas{
+            display: flex;
+            flex-direction:row;
+            justify-content: space-around;
+            align-items: center;
+            width: unset;
+            gap: 50px;
         }
         .hero-logo:hover{
             transform: scale(1.2);
@@ -233,6 +242,11 @@
             align-items: center;
 
         }
-        .gato{
-            
-        }
+.active{
+    text-decoration: underline;
+    color: var(--naranja);
+}
+
+.active:hover{
+    color:var(--blanco)
+}
